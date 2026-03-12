@@ -1,0 +1,1 @@
+console.log("Disaster Response Management System Loaded");

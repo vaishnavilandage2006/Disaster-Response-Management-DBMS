@@ -10,60 +10,21 @@
 
 <h1>Disaster Response Management System</h1>
 
-<div class="container">
-
-<div class="card">
-<h2>Total Disasters</h2>
-<p>120</p>
+<div class="search-container">
+<input type="text" id="searchBox" placeholder="Search disaster...">
+<button onclick="searchDisaster()">Search</button>
+<button onclick="refreshTable()">Refresh</button>
 </div>
 
-<div class="card">
-<h2>Victims Registered</h2>
-<p>850</p>
-</div>
+<h2>Disaster Records</h2>
 
-<div class="card">
-<h2>Rescue Teams</h2>
-<p>35</p>
-</div>
-
-<div class="card">
-<h2>Relief Camps</h2>
-<p>18</p>
-</div>
-
-</div>
-
-<h2>Recent Disasters</h2>
-
-<table>
+<table id="disasterTable">
 
 <tr>
 <th>ID</th>
-<th>Disaster Type</th>
+<th>Type</th>
 <th>Date</th>
 <th>Location</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Flood</td>
-<td>12-07-2024</td>
-<td>Kolhapur</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>Earthquake</td>
-<td>05-06-2023</td>
-<td>Pune</td>
-</tr>
-
-<tr>
-<td>3</td>
-<td>Cyclone</td>
-<td>15-08-2022</td>
-<td>Mumbai</td>
 </tr>
 
 </table>

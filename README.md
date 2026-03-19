@@ -1,54 +1,80 @@
-# Disaster Response Management System
+# Disaster Response Management System (DBMS Project)
 
-## Introduction
+## Overview
 
-The **Disaster Response Management System** is a DBMS project created to manage information related to disasters and the people affected by them.
-During disasters like floods, earthquakes, or cyclones, it becomes difficult to organize data about victims, rescue teams, and relief supplies. This system demonstrates how a database can help store and manage such information efficiently.
+The Disaster Response Management System is a DBMS mini-project created to manage and organize information during emergency situations like floods, earthquakes, and cyclones.
 
-The main goal of this project is to design a structured database and perform operations on it using SQL.
+In real-life disasters, handling data about victims, rescue teams, and supplies becomes difficult. This project shows how a database system can simplify and organize all this information efficiently.
 
 ---
 
-## Purpose of the Project
+## Objective
 
-The purpose of this project is to understand how database systems can be used in real-life situations.
-In disaster situations, proper data management is very important for rescue operations and relief planning.
+The main goal of this project is to:
 
-This project shows how different types of disaster-related data can be connected and managed using a relational database.
+* Design a proper ER diagram with constraints
+* Convert it into a relational database
+* Perform operations using SQL
+* Understand how DBMS works in real-world scenarios
+
+---
+
+## Why This Project Matters
+
+During disasters, proper data management helps in:
+
+* Faster rescue operations
+* Tracking victims
+* Managing relief supplies
+* Better planning and coordination
+
+This project demonstrates how a structured database can make these processes easier.
 
 ---
 
 ## Technologies Used
 
-The following tools and technologies were used while building this project:
-
-* **MySQL** – for database creation and management
-* **MySQL Workbench** – for designing and running SQL queries
-* **HTML** – to create a simple web interface
-* **CSS** – for styling the interface
-* **JavaScript** – to add simple interactive features
-* **Git & GitHub** – for version control and project hosting
+* MySQL – Database creation
+* MySQL Workbench – Query execution
+* HTML – Structure of web page
+* CSS – Styling
+* JavaScript – Basic interactivity
+* Git & GitHub – Version control
 
 ---
 
-## Database Description
+## Database Design
 
-The database contains multiple tables that store information related to disaster management.
+The system is designed using an ER Diagram with cardinality and participation constraints (min-max).
 
-Main tables used in the project include:
+### Main Entities
 
-* **Area** – stores information about different locations
-* **Disaster** – stores records of disaster events
-* **Victim** – contains information about affected people
-* **Rescue Member** – details of rescue team members
-* **Supplies** – information about relief materials
-* **Shifting Area** – temporary places where victims are relocated
-
-These tables are connected using relationships to maintain data consistency.
+* Area – Stores location details
+* Disaster – Information about disasters
+* Victim – Details of affected people
+* Rescue_Member – Rescue team members
+* Supplies – Relief materials
+* Shifting_Area – Temporary shelters
 
 ---
 
-## Project Folder Structure
+## ER Diagram (With Constraints)
+
+The ER diagram includes:
+
+* Cardinality ratios (1:N, M:N)
+* Participation constraints (Mandatory / Optional)
+* Min-Max notation
+* Relationship attributes
+
+File Location:
+`ER_Diagram/er_diagram.png`
+
+This diagram clearly represents how all entities are connected in the system.
+
+---
+
+## Project Structure
 
 ```
 Disaster-Response-Management-DBMS
@@ -72,62 +98,56 @@ Disaster-Response-Management-DBMS
 
 ## Database Files
 
-**schema.sql**
-This file contains all SQL commands required to create the database and tables.
-
-**sample_data.sql**
-This file contains sample records used to test the database and demonstrate how data is stored.
+* schema.sql → Contains SQL commands to create tables
+* sample_data.sql → Contains sample records for testing
 
 ---
 
 ## Web Interface
 
-A simple web interface is included in the project to represent disaster records in a readable format.
+A simple web interface is provided to display disaster data.
 
-The interface includes:
+### Features:
 
-* A table showing disaster information
-* A search option to filter disasters
-* A basic dashboard layout
-
-This part of the project helps show how database information could be displayed in a web application.
+* View disaster records
+* Search and filter functionality
+* Clean and simple layout
 
 ---
 
 ## How to Run the Project
 
-### Step 1: Create the Database
+### Step 1: Create Database
 
-Open MySQL Workbench and execute the `schema.sql` file.
+Run `schema.sql` in MySQL Workbench
 
-### Step 2: Insert Sample Data
+### Step 2: Insert Data
 
-Run the `sample_data.sql` file to insert example records into the database.
+Run `sample_data.sql`
 
-### Step 3: Open the Web Interface
+### Step 3: Run Interface
 
-Go to the **Web_Interface** folder and open the `index.html` file in your web browser.
+Open `index.html` in your browser
 
 ---
 
-## What I Learned From This Project
+## What I Learned
 
-While working on this project, I learned:
-
-* How to design an ER diagram
-* How to convert an ER diagram into a relational schema
-* How to write SQL queries for creating and inserting data
-* How to organize a database project structure
-* How a simple web interface can display database information
+* Designing ER diagrams with constraints
+* Converting ER model into relational schema
+* Writing SQL queries
+* Structuring a DBMS project
+* Connecting database with frontend
 
 ---
 
 ## Conclusion
 
-This project demonstrates how database systems can help organize disaster-related information in a structured way. With proper database management, it becomes easier to track disasters, manage rescue operations, and handle relief resources efficiently.
+This project shows how a Disaster Management System using DBMS can help manage important data in an organized way during emergencies.
 
 ---
 
 ## Author
+
 Vaishnavi Landage
-2nd Year CSE Student 
+2nd Year CSE Student

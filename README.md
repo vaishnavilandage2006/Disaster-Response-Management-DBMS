@@ -62,13 +62,12 @@ The system is designed using an ER Diagram with cardinality and participation co
 
 The ER diagram includes:
 
-* Cardinality ratios (1:N, M:N)
-* Participation constraints (Mandatory / Optional)
+* Cardinality ratios (1:M, 1:1)
 * Min-Max notation
 * Relationship attributes
 
 File Location:
-`ER_Diagram/er_diagram.png`
+`er diagram of disaster response management system.png`
 
 This diagram clearly represents how all entities are connected in the system.
 
@@ -80,7 +79,7 @@ This diagram clearly represents how all entities are connected in the system.
 Disaster-Response-Management-DBMS
 │
 ├── ER_Diagram
-│   └── er_diagram.png
+│   └── er diagram of disaster response management system.png
 │
 ├── Database
 │   ├── schema.sql
@@ -149,5 +148,5 @@ This project shows how a Disaster Management System using DBMS can help manage i
 
 ## Author
 
-Vaishnavi Landage
+Vaishnavi Santosh Landage
 2nd Year CSE Student
